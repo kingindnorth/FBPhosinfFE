@@ -179,3 +179,55 @@ footer ol li a:hover {
 footer small {
   font-size: 11px;
 }
+
+/* Existing CSS styles remain the same */
+
+/* Add the following at the end for responsiveness */
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .col-logo, .col-form {
+    flex: 1 0 100%;
+  }
+
+  .col-logo img {
+    max-width: 200px; /* Adjust the logo size for smaller screens */
+  }
+
+  .col-logo h2 {
+    font-size: 20px; /* Adjust heading size for smaller screens */
+  }
+
+  .col-form .form-container {
+    max-width: 300px; /* Adjust form container width */
+  }
+
+  .col-form .form-container input, 
+  .col-form .form-container .btn-login,
+  .col-form .form-container .btn-new {
+    font-size: 14px; /* Adjust input and button font size */
+  }
+
+  footer ol {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer ol li {
+    padding: 5px 0;
+  }
+
+  footer ol:first-child {
+    border-bottom: none; /* Remove border bottom for the first ol */
+  }
+
+  footer small {
+    margin-top: 10px;
+  }
+}
